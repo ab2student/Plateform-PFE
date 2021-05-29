@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" type="text/css" href="css/style-commerçant.css">
+
+	<title>Inscription Commerçant - Hotel</title>
+</head>
+<body>
+	<div class="container">
+		<form action="" method="POST" class="login-email">
+            <p class="login-text" style="font-size: 2rem; font-weight: 800;">Inscription Commerçant - Hotel</p>
+			<div class="input-group">
+				<input type="text" placeholder="Nom hotel *" name="nom-hotel" required>
+			</div>
+			<div class="input-group2">
+				<input type="tel" placeholder="Telephone" name="tel">
+            </div>
+
+            <div class="input-group">
+				<input type="email" placeholder="Email hotel" name="email">
+			</div>
+            
+            <div class="input-group2">
+                <select id="type-service" required>
+                    <option value="default">_Type de service_ *</option>
+                    <option value="limité">Limité </option>
+                    <option value="moyen">Milieu de gamme</option>
+                    <option value="luxe">Haut de gamme</option>
+                </select><br><br>			
+            </div>
+
+            <div class="input-group2">
+                <select id="durée-séjour" required>
+                    <option value="default">_Durée de séjour_ *</option>
+                    <option value="heurs">par heurs </option>
+                    <option value="jrs">par jours</option>
+                    <option value="semaines">par semaines</option>
+                    <option value="illimité">illimité</option>
+                </select><br><br>				
+            </div>
+
+            <div class="input-group">
+                <select id="nbr-chambre" required>
+                    <option value="default">_Nombres de chambres_ *</option>
+                    <option value="inf-200">moins de 200 </option>
+                    <option value="200-400">entre 200 et 400</option>
+                    <option value="400-700">entre 400 et 700</option>
+                    <option value="sup-700">plus de 700</option>
+                </select><br><br>
+			</div>
+
+
+            <div class="input-group">
+                <select id="wilaya" required>
+                    <option value="default">_Wilayas_ *</option>
+                    <option value="alger">Alger</option>
+                    <option value="oran">Oran</option>
+                    <option value="batna">Batna</option>
+                </select><br><br>
+			</div>
+
+			<div class="input-group2">
+				<textarea name="description" id="description" placeholder="Description"></textarea>
+            </div>
+
+			<div class="input-group-btn">
+				<button name="submit" class="btn"><a href="BR.html">Confirmer</a></button>
+			</div>
+			<p class="login-register-text">Vous avez un compte? <a href="login.html">Login ici</a>.</p>
+		</form>
+	</div>
+</body>
+</html>

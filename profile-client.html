@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Profile Client</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style-profile.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <a class="logo" href="home.html">Review</a>
+            <nav>
+                <ul class="nav__links">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="BR.html">Messagerie</a></li>
+                    <li class="username"><a href="#">Username</a>
+                        <ul>
+                            <li><a href="login.html" style="color: red;">Déconnecter</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <p class="menu cta">Menu</p>
+        </header>
+
+        <div class="all">
+            <div class="container">
+                <form action="" method="POST" class="login-email">
+                    <p class="login-text" style="font-size: 2rem; font-weight: 800;">Vos informations</p>
+
+                    <div class="input-group-photo">
+                        <img src="images/hotel.jpg" id="photo">
+                        <input type="file" id="file">
+                        <label for="file" id="uploadBtn"><center>Choose Photo</center></label>
+                    </div>
+                      
+                    <div class="input-group">
+                        <input type="text" placeholder="Username" name="username" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" placeholder="Email" name="email" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" placeholder="Password Actuel" name="password" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" placeholder="Nouveaux Password" name="password" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" placeholder="Confirm Password" name="cpassword" required>
+                    </div>
+                    <div class="input-group">
+                        <button name="submit" class="btn">Confirmer</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+        <div id="mobile__menu" class="overlay">
+            <a class="close">&times;</a>
+            <div class="overlay__content">
+                <a href="home.html">Home</a>
+                <a href="BR.html">Messagerie</a>
+                <a href="login.html">Déconnecter</a>
+            </div>
+        </div>
+        <script src="js/profile-client.js"></script>
+    </body>
+</html>
